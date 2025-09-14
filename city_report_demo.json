@@ -1,0 +1,8 @@
+{
+  "city": "Demo City",
+  "kpi": {
+    "Air Quality": 75,
+    "Energy Use": 1250,
+    "Water Usage": 500
+  }
+}
