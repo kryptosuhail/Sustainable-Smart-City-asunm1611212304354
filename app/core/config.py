@@ -14,15 +14,12 @@ class Settings(BaseSettings):
     INDEX_NAME: str
 
     class Config:
-        # Make sure the .env file is at the root of your project
         env_file = ".env"
         env_file_encoding = "utf-8"
-        extra = "ignore"  # ignores unexpected keys in .env
+        extra = "ignore"
 
-# ✅ Cached function
 @lru_cache()
 def get_settings() -> Settings:
     return Settings()
 
-# ✅ Global instance (for old imports)
 settings = get_settings()

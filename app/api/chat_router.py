@@ -1,10 +1,8 @@
-# app/api/chat_router.py
-
 from fastapi import APIRouter
 from pydantic import BaseModel
 from app.services.granite_llm import ask_granite
 
-router = APIRouter(prefix="/chat", tags=["chat"])
+router = APIRouter(prefix="/chat", tags=["chat"])  # <-- must be here at top-level
 
 class ChatPrompt(BaseModel):
     prompt: str
