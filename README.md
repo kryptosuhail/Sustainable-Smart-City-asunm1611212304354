@@ -136,5 +136,3 @@ frontend/
 - Sanjairam  
 
 ---
-
-> 📝 This README was auto-generated from the official project documentation.
